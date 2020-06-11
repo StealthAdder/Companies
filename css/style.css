@@ -13,7 +13,6 @@ h1 {
 #dh1 {
     background-color: black;
     padding: 20px 10px 20px 10px;
-    margin-bottom: 10px;
 }
 
 .menu1 {
@@ -22,4 +21,76 @@ h1 {
     padding-right: 50px;
     padding-left: 20px;
     align-content: center;
+}
+
+#sdiv {
+    background-color: cornflowerblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+#Ah3 {
+    margin-top: 0px;
+    padding-left: 5px;
+    font-size: x-large;
+}
+
+#ap {
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#sul {
+    padding-left: 0px;
+    
+}
+
+#ulis {
+    padding-left: 30px;
+}
+
+.uli {
+    list-style-type: none;
+    display: inline;
+    padding: 0px 10px 0px 10px;
+    font-size: x-large;
+}
+
+#prodiv1 {
+    padding-top: 5px;
+    background-color: lightsteelblue;
+    padding-bottom: 10px;
+}
+
+#imgelon {
+    width: 100px;
+    height: 100px;
+    padding-left: 25px;
+}
+
+#pt1 {
+    padding-left: 34px;
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+#fp {
+    margin-top: 0px;
+}
+
+#fh5 {
+    background-color: black;
+    color: whitesmoke;
+    padding: 5px 5px 5px 5px;
+    text-align: right;
+    margin-top: 0px;
+}
+
+#sh3 {
+    padding-left: 5px;
+    font-size: x-large;
 }
