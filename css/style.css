@@ -61,7 +61,7 @@ h1 {
 #prodiv1 {
     padding-top: 5px;
     background-color: lightsteelblue;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 #imgelon {
@@ -93,4 +93,24 @@ h1 {
 #sh3 {
     padding-left: 5px;
     font-size: x-large;
+}
+
+
+
+#gret {
+    background-color: rgb(0, 132, 255);
+    margin-bottom: 0px;
+    padding: 10px;
+    margin-top: 0px;
+}
+
+#greetings {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+#dtime {
+    text-align: right;
+    font-weight: bold;
+    display: block;
 }
