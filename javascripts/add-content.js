@@ -1,6 +1,7 @@
 let today = new Date();
 let hourNow = today.getHours();
-let timeNow = today.getTime();
+//let timeNow = today.getTime();
+let timeNow = today.getHours()+":"+ today.getMinutes()+":"+today.getSeconds();
 let greetings;
 
 if (hourNow > 18) {
@@ -20,7 +21,7 @@ function updateMessage(){
     let el2 = document.getElementById('Time');
 
     el.textContent = greetings;
-    el2.textContent = timeNow;
+    el2.textContent = timeNow ;
 
 }
 
