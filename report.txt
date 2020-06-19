@@ -1,0 +1,4 @@
+This to to report about the changed made to file & brief of the change.
+@hari: Checked the js alert function it is cool. removed the php part of validation and cleaned the php variables.
+________________________________________________________________________________________
+
