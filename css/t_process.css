@@ -1,0 +1,79 @@
+ *{
+     font-family: Helvetica;
+ }
+
+#th1 {
+    background-color: rgb(0, 132, 255);
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 0px;
+}
+
+/* #mdiv1 {
+    background-color: grey;
+} */
+
+#info {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px 0px 10px 15px;
+    font-weight: bold;
+}
+
+#rp {
+    margin: 0px;
+    padding: 10px 0px 10px 5px;
+}
+
+#mdiv2 {
+    border-style: solid;
+    margin-bottom: 1px;
+}
+
+#smy {
+    margin: 0px 0px 5px 0px;
+    padding: 5px 0px 2.5px 0px;
+    text-align: center;
+    font-size: 25px;
+    background-color: cornflowerblue; 
+}
+
+#dsum {
+    padding: 0px 0px 5px 5px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+#summary {
+    padding: 10px 20px 10px 20px;
+    margin: 0px;
+    font-weight: 600;
+}
+
+#dh1 {
+    background-color: black;
+    padding: 20px 10px 20px 10px;
+}
+
+.menu1 {
+    color: whitesmoke;
+    text-decoration: none;
+    padding-right: 50px;
+    padding-left: 20px;
+    align-content: center;
+}
+
+#fh5 {
+    background-color: black;
+    color: whitesmoke;
+    padding: 5px 5px 5px 5px;
+    text-align: right;
+    margin-top: 0px;
+}
+
+#thanks {
+    text-align:center;
+    margin: 30px 0px 30px 0px;
+}

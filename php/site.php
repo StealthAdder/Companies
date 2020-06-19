@@ -17,19 +17,20 @@
         <div id="md2">
             <h2 id="gint">Queries</h2>
             <div id="frm">
-                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SLEF"]);?>" method="post">
-                Full Name :<input type="text" name="flName"><br>
-                Maild Id : <input type="text" name="mail"><br>
-                Phone No: <input type="text" name="phoneNo"><br>
-                <span id="lym">Leave your message</span><br>
-                <textarea name="msg" id="" cols="30" rows="5"></textarea><br>
-                <input type="submit" value="Send" id="submit">
+                <form action="/proc_pages/t_process.php" method="post" autocomplete="off">
+                <span id="name">Full Name :<input type="text" name="flName"></span><br>
+                <span id="mail">Maild Id : <input type="text" name="mail"></span><br>
+                <span id="phone">Phone No: <input type="text" name="phoneNo"></span><br>
+                <span id="lym">Leave your message: </span><br>
+                    <textarea name="msg" id="msg" cols="80" rows="8"></textarea>
+                <br>
+                <input type="submit" value="Send" id="sumbit">
                 </form>
             </div>  
         </div>
         <h2 id="cb">Tech Support</h2>
         <div id="md1">
-            <h2 id="cb1">TexSys Corp. Tech Support:</h2>
+            <h2 id="cb1">Tech Support - TexSys Corp.</h2>
             <h3 id="dcih3">Developer's - Contact info:</h3>
             <div id="devgit">
                 <span id="SAspan">StealthAdder<a href="https://github.com/StealthAdder" target="_blank" class="adevgit"> : GitHub &</a><span>
