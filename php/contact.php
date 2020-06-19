@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact-Us</title>
     <link rel="stylesheet" href="/css/contact_site.css">
+    <script src="\javascripts\validation.js"></script>
 </head>
 <body>
     <header>
@@ -17,13 +18,13 @@
         <div id="md2">
             <h2 id="gint">Queries</h2>
             <div id="frm">
-                <form action="/proc_pages/t_process.php" method="post" autocomplete="off">
-                <span id="name">Full Name :<input type="text" name="flName"></span><span class="error">*<?php echo $flNameErr?></span><br>
-                <span id="mail">Maild Id : <input type="text" name="mail"></span><span class="error">*<?php echo $mailErr?></span><br>
-                <span id="phone">Phone No: <input type="text" name="phoneNo"></span><span class="error">*<?php echo $phoneNoErr?></span><br>
+                <form action="/proc_pages/t_process.php" method="post" autocomplete="off" onsubmit="return validation()">
+                <span id="name">Full Name :<input type="text" name="flName"></span><span class="error">*<?php echo $_POST["flNameErr"]?></span><br>
+                <span id="mail">Maild Id : <input type="text" name="mail"></span><span class="error">*<?php echo $_POST["mailErr"]?></span><br>
+                <span id="phone">Phone No: <input type="text" name="phoneNo"></span><span class="error">*<?php echo $_POST["phoneNoErr"]?></span><br>
                 <span id="lym">Leave your message: </span><br>
                     <textarea name="msg" id="msg" cols="80" rows="8"></textarea>
-                    <span class="error">*<?php echo $msgErr?></span>
+                    <span class="error">*<?php echo $_POST["msgErr"]?></span>
                 <br>
                 <input type="submit" value="Send" id="sumbit">
                 </form>
@@ -34,7 +35,7 @@
                 //
                 if ($_SERVER["REQUESTED METHOD"] == "POST") {
                     
-                    if (empty($_POST["flName"])){
+                    if ($flName){       //if (empty($_POST["flName"]))
                         $flNameErr = "Required";
                     }
                     else {
