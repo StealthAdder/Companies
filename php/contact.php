@@ -27,7 +27,7 @@
                 <br>
                 <input type="submit" value="Send" id="sumbit">
                 </form>
-                <?php 
+                <?php
                 $flName = $mail = $phoneNo = $msg = "";
                 $flNameErr = $mailErr = $phoneNoErr = $msgErr = "";
 
