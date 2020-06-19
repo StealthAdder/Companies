@@ -55,5 +55,6 @@
     <footer>
         <h5 id="fh5">Portfolio Inc. 2020</h3>
     </footer>
+    <script src="\javascripts\goHome.js"></script>
 </body>
 </html>
