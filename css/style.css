@@ -8,6 +8,8 @@ h1 {
     padding-left: 10px;
     padding: 25px;
     margin-bottom: 0px;
+    border-radius: 22px;
+    margin-bottom: 1pt;
 }
 
 #dh1 {
@@ -113,4 +115,15 @@ h1 {
     text-align: right;
     font-weight: bold;
     display: block;
+}
+
+.btn {
+    background: transparent;
+    color: black;
+    font-weight: 700;
+    padding: 0.375rem 0.75rem;
+    /* margin: 30px 100px; */
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0 5px 13px;
 }
