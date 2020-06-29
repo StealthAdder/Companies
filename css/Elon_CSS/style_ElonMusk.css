@@ -9,6 +9,8 @@ body {
     padding-left: 10px;
     padding: 25px;
     margin-bottom: 0px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 #pph1 {
