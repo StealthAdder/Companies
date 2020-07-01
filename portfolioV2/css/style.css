@@ -1,0 +1,130 @@
+body {
+    font-family: Helvetica;
+}
+
+h1 {
+    background-color: black;
+    color: whitesmoke;
+    padding-left: 10px;
+    padding: 25px;
+    margin-bottom: 0px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+#dh1 {
+    background-color: black;
+    padding: 20px 10px 20px 10px;
+}
+
+.menu1 {
+    color: whitesmoke;
+    text-decoration: none;
+    padding-right: 50px;
+    padding-left: 20px;
+    align-content: center;
+}
+
+#sdiv {
+    background-color: cornflowerblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+#Ah3 {
+    margin-top: 0px;
+    padding-left: 5px;
+    font-size: x-large;
+}
+
+#ap {
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#sul {
+    padding-left: 0px;
+    
+}
+
+#ulis {
+    padding-left: 30px;
+}
+
+.uli {
+    list-style-type: none;
+    display: inline;
+    padding: 0px 10px 0px 10px;
+    font-size: x-large;
+}
+
+#prodiv1 {
+    padding-top: 5px;
+    background-color: lightsteelblue;
+    padding-bottom: 5px;
+}
+
+#imgelon {
+    width: 100px;
+    height: 100px;
+    padding-left: 25px;
+}
+
+#pt1 {
+    padding-left: 34px;
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+#fp {
+    margin-top: 0px;
+}
+
+#fh5 {
+    background-color: black;
+    color: whitesmoke;
+    padding: 5px 5px 5px 5px;
+    text-align: right;
+    margin-top: 0px;
+}
+
+#sh3 {
+    padding-left: 5px;
+    font-size: x-large;
+}
+
+
+
+#gret {
+    background-color: rgb(0, 132, 255);
+    margin-bottom: 0px;
+    padding: 10px;
+    margin-top: 0px;
+}
+
+#greetings {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+#dtime {
+    text-align: right;
+    font-weight: bold;
+    display: block;
+}
+
+.btn {
+    background: transparent;
+    color: black;
+    font-weight: 700;
+    padding: 0.375rem 0.75rem;
+    /* margin: 30px 100px; */
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0 5px 13px;
+}

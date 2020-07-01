@@ -1,0 +1,109 @@
+body {
+    font-family: Helvetica;
+}
+
+#dh1 {
+    background-color: black;
+    padding: 20px 10px 20px 10px;
+}
+
+.menu1 {
+    color: whitesmoke;
+    text-decoration: none;
+    padding-right: 50px;
+    padding-left: 20px;
+    align-content: center;
+}
+
+
+#cb {
+    background-color: rgb(0, 132, 255);
+    color: whitesmoke;
+    margin-bottom: 0px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 0px;
+}
+
+#mh1 {
+    background-color: black;
+    color: whitesmoke;
+    padding-left: 10px;
+    padding: 25px;
+    margin-bottom: 0px;
+}
+
+#about_h5 {
+    color: black;
+    text-align: right;
+    margin: 0px;
+    padding: 5px 5px 5px 0px
+}
+
+#cb1 {
+    padding-top: 25px;
+    margin-top: 0px;
+    padding-left: 10px;
+}
+
+#md1 {
+    background-color: lightsteelblue;
+}
+
+#dcih3 {
+    padding-left: 30px;
+}
+
+#devgit {
+    font-size: larger;
+    font-weight: bold;
+    color: mediumblue;
+}
+
+#SAspan {
+    padding-left: 35px;
+}
+
+.adevgit {
+    text-decoration: none;
+    color: black;
+}
+
+#md2 {
+    border-style: solid;
+    padding-bottom: 2px;
+}
+
+#fh5 {
+    background-color: black;
+    color: whitesmoke;
+    padding: 5px 5px 5px 5px;
+    text-align: right;
+    margin-top: 0px;
+}
+
+#gint {
+    text-align: left;
+    margin: 0px;
+    padding: 10px 0px 10px 10px;
+    margin-bottom: 10px;
+    background-color: rgb(0, 132, 255);
+    color: whitesmoke;
+}
+#sumbit {
+    margin-left: 10px;
+    font-size: 20px;
+    border-radius: 3px;
+}
+
+#name, #mail, #phone, #lym {
+    padding-left: 10px;
+}
+
+/* #msg {
+    margin-left: 5px;
+} */
+
+.error {
+    color: red;
+}
