@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            background-color: skyblue;
+            font-family: Verdana, Geneva, Tahoma;
+            color: aliceblue;
+            padding: 30px;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-size: 48px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            font-size: 28px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        p,
+        ul {
+            text-transform: capitalize;
+            font-size: 38px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Success</title>
+</head>
+
+<body>
+    <%-include('partialTemplate/nav.ejs')%>
+    <h1>Thank You!</h1>
+    <h2><%=data.flName%></h2>
+    <p>We will contact you at <%=data.mail%> or <%=data.phoneNo%></p>
+    <h2>Our customer service team will look into your message: </h2>
+    <p><%=data.msg%></p>
+</body>
+
+</html>
