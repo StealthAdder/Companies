@@ -4,29 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact-Us</title>
-    <link rel="stylesheet" href="/css/contact_site.css">
-    <script src="/javascripts/validation.js">  </script>
+    <link rel="stylesheet" href="/Portfolio/css/contact_site.css">
+    <script src="/Portfolio/javascripts/validation.js">  </script>
 </head>
 <body>
     <header>
         <h1 id="mh1">Portfolio Inc.</h1>
         <div id="dh1">
-            <span><a href="/index.html" class="menu1">Home</a></span> 
+            <span><a href="/Portfolio/index.html" class="menu1">Home</a></span> 
         </div>
     </header>
     <main>
         <div id="md2">
             <h2 id="gint">Queries</h2>
             <div id="frm">
-                <form name="RegForm" action="/proc_pages/t_process.php" onsubmit="return validation()" method="post"> <!-- autocomplete="off"-->
-                <span id="name">Full Name :<input type="text" name="flName"></span><span class="error"></span><br>
-                <span id="mail">Maild Id : <input type="text" name="mail"></span><span class="error"></span><br>
-                <span id="phone">Phone No: <input type="text" name="phoneNo"></span><span class="error"></span><br>
-                <span id="lym">Leave your message: </span><br>
-                    <textarea name="msg" id="msg" cols="80" rows="8"></textarea>
-                    <span class="error"></span>
-                <br>
-                <input type="submit" value="Send" id="sumbit">
+                <form name="RegForm" action="/Portfolio/proc_pages/t_process.php" onsubmit="return validation()" method="post" autocomplete="on">
+
+                    <table>
+                        <tr>
+                            <td>Full Name :</td>
+                            <td><input type="text" name="flName"></td>
+                        </tr>
+                        <tr>
+                            <td>Maild Id :</td>
+                            <td><input type="text" name="mail"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Phone No:
+                            </td>
+                            <td>
+                                <input type="text" name="phoneNo">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Message:  
+                            </td>
+                            <td>
+                                <textarea name="msg" id="msg" cols="80" rows="8"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="submit" value="Send" id="sumbit">
+                            </td><br>
+                        </tr>
+                    </table>                
                 </form>
                 
             </div>

@@ -99,11 +99,3 @@ body {
 #name, #mail, #phone, #lym {
     padding-left: 10px;
 }
-
-/* #msg {
-    margin-left: 5px;
-} */
-
-.error {
-    color: red;
-}

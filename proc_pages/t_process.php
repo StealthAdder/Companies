@@ -4,13 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Support</title>
-    <link rel="stylesheet" href="/css/t_process.css">
+    <link rel="stylesheet" href="/Portfolio/css/t_process.css">
 </head>
 <body>
+    <?php
+        //declare short vars
+        $fname = $_POST['flName'];
+        $mail= $_POST['mail'];
+        $phoneNo = $_POST['phoneNo'];
+        $msg = $_POST['msg'];
+
+
+        include ("/var/www/html/config_portfolio/DB-config.php");
+        
+        // //connection
+        $conn = mysqli_connect($host, $user, $passwd, 'portfolio');
+        unset($hostname, $username, $passwd);
+
+        //checking con
+        if(mysqli_connect_errno()){
+            echo "Error in connection Please check the connection" . mysqli_connect_errno();
+        }
+
+        $sql = "INSERT INTO Client_Msg (flname, mail, phoneNo, msg)
+        VALUES ('".$fname."','".$mail."','".$phoneNo."','".$msg."')";
+
+        $result = mysqli_query($conn, $sql);
+
+        $rows_affected = mysqli_affected_rows($result);
+
+        if($result){
+        } else {
+            echo "An error occured during processing the file: The data entry didnt happen.";
+        }
+        
+        mysqli_free_result($result);
+
+        //close
+        mysqli_close($conn);
+        
+    ?>
     <header>
         <h1 id="th1">Tech Support</h1>
         <div id="dh1">
-            <span><a href="/index.html" class="menu1">Home</a></span> 
+            <span><a href="/Portfolio/index.html" class="menu1">Home</a></span> 
         </div>
     </header>
     <main id="cont">
@@ -33,28 +70,12 @@
                     echo "<br>";
                 ?>
                 <p id="thanks">Thanks for contacting Tech Support</p>
-                <?php 
-                    $dump = fopen("dumps/tech_dd.txt" , "a+") or die("Unable to access file");
-
-                    $name = "client Name: ".$_POST["flName"]."\n";
-                    fwrite($dump,$name);
-
-                    $mail = "client Mail-ID: ".$_POST["mail"]."\n";
-                    fwrite($dump,$mail);
-
-                    $phone = "client Phone-No: ".$_POST["phoneNo"]."\n";
-                    fwrite($dump,$phone);
-
-                    $msg = "client Message/Query: ".$_POST["msg"]."\n________________________________________________\n";
-                    fwrite($dump,$msg);
-                    fclose($dump);
-                ?>
             </div>
-        </div> 
+        </div>
     </main>
     <footer>
         <h5 id="fh5">Portfolio Inc. 2020</h3>
     </footer>
-    <script src="\javascripts\goHome.js"></script>
+    <!-- <script src="\Portfolio\javascripts\goHome.js"></script> -->
 </body>
 </html>
