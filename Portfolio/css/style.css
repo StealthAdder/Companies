@@ -45,21 +45,8 @@ h1 {
     padding-right: 10px;
 }
 
-#sul {
-    padding-left: 0px;
-    
-}
 
-#ulis {
-    padding-left: 30px;
-}
 
-.uli {
-    list-style-type: none;
-    display: inline;
-    padding: 0px 10px 0px 10px;
-    font-size: x-large;
-}
 
 #prodiv1 {
     padding-top: 5px;
@@ -92,12 +79,6 @@ h1 {
     text-align: right;
     margin-top: 0px;
 }
-
-#sh3 {
-    padding-left: 5px;
-    font-size: x-large;
-}
-
 
 
 #gret {

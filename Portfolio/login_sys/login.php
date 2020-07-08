@@ -10,14 +10,14 @@
     <div>
         <section>
             <h3>Sign In</h3>
-            <form action="/Portfolio/login_sys/includes/login.inc.php" method="post" autocomplete="off">
+            <form action="/Portfolio/Portfolio/login_sys/includes/login.inc.php" method="post" autocomplete="off">
                 <input type="text" name="username" placeholder="Username/MailID">
                 <br>
                 <input type="password" name="pwd" placeholder="Password">
                 <br>
                 <button type="submit" name="login-submit">Sign In</button>
                 or
-                <button><a href="/Portfolio/login_sys/signup.php" style="text-decoration: none;">Sign up</a></button>
+                <button><a href="/Portfolio/Portfolio/login_sys/signup.php" style="text-decoration: none;">Sign up</a></button>
             </form>
         </section>
     </div>
