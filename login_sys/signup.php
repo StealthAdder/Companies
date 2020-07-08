@@ -8,7 +8,7 @@
 <body>
     <section class="#">
         <h1>Portfolio</h1>
-        <a href="/Portfolio/index.html">HOME</a>
+        <a href="/Portfolio/index.php">HOME</a>
         <br>
         <h3>Register</h1>
         <form action="/Portfolio/login_sys/includes/signup.inc.php" method="POST" autocomplete="off">

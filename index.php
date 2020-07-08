@@ -1,3 +1,7 @@
+<?php
+//Creating session
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,9 +14,19 @@
     <header>
         <h1>Portfolio Inc.</h1>
         <nav id="dh1">
-            <span><a href="/Portfolio/index.html" class="menu1">Home</a></span> <span><a href="/Portfolio/contact.html" class="menu1">Tech Support</a></span>
+            <span><a href="/Portfolio/index.php" class="menu1">Home</a></span> <span><a href="/Portfolio/contact.html" class="menu1">Tech Support</a></span>
             <span><a href="/Portfolio/colorFlip/colorflip.html" class="menu1">Random Color</a></span>
-            <a class="menu1" href="/Portfolio/login_sys/signup.php">Sign up</a>
+            <span>
+            <?php
+            if(isset($_SESSION['client_id'])) {
+                //logout
+                echo '<a class="menu1" href="/Portfolio/login_sys/includes/logout.inc.php">logout</a>';
+            }
+            else {
+                echo '<a class="menu1" href="/Portfolio/login_sys/login.php">Sign In</a>';
+            }
+        ?>
+            </span>
         </nav>
         <div id="gret">
             <span id="greetings"></span>
@@ -21,6 +35,15 @@
                 <span id="Time">Time</span>
                 <span>IST</span>
             </span>
+            <?php
+                    //check if we have session var
+                    if (isset($_SESSION['client_id'])) {
+                        echo "<p>You are logged in</p>";
+                    } 
+                    else {
+                        echo "<p>You are logged out</p>";
+                    }
+            ?>
         </div>
     </header>
     <main>

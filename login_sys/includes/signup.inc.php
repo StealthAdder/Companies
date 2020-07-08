@@ -89,7 +89,7 @@ if (isset($_POST['signup-submit'])) {
                     mysqli_stmt_execute($stmt);
                     mysqli_stmt_store_result($stmt);
 
-                    header("Location: /Portfolio/index.html?signup=success");
+                    header("Location: /Portfolio/index.php?signup=success");
                     exit();
                 }
 
