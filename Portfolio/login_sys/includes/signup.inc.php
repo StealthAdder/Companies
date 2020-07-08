@@ -22,27 +22,27 @@ if (isset($_POST['signup-submit'])) {
     //Error Handling
     //E1 - VAILDATION FOR EMPTYFIELDS
     if (empty($client_name) || empty($client_username) || empty($client_password) || empty($client_passwordRepeat)) {
-        header("Location: /Portfolio/Portfolio/login_sys/signup.php?error=emptyfields");
+        header("Location: /Companies/Portfolio/login_sys/signup.php?error=emptyfields");
         exit();
     }
     //E2 - VALIDATON USERNAME & PASSWORD
     elseif (!filter_var($client_mailid, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z0-9]*$/", $client_username)) {
-            header("Location: /Portfolio/Portfolio/login_sys/signup.php?error=invalidusernamemailid");
+            header("Location: /Companies/Portfolio/login_sys/signup.php?error=invalidusernamemailid");
             exit(); 
     }
     //E3 - VALIDATION FOR MAILID
     elseif (!filter_var($client_mailid, FILTER_VALIDATE_EMAIL)) {
-        header("Location: /Portfolio/Portfolio/login_sys/signup.php?error=invalidmailid&uid=".$client_username);
+        header("Location: /Companies/Portfolio/login_sys/signup.php?error=invalidmailid&uid=".$client_username);
         exit();
     }
     //E4 - VALIDATION FOR USERNAME
     elseif (!preg_match("/^[a-zA-Z0-9]*$/", $client_username)) {
-        header("Location: /Portfolio/Portfolio/login_sys/signup.php?error=invlaiduid&mail=".$client_mailid);
+        header("Location: /Companies/Portfolio/login_sys/signup.php?error=invlaiduid&mail=".$client_mailid);
     }
 
     //E5 - PASSWORD - REPEAT MISMATCHED
     elseif ($client_password !== $client_passwordRepeat) {
-        header("Location: /Portfolio/Portfolio/login_sys/signup.php?error=passwordcheck&userid".$client_username."&mailid=".$client_mailid);
+        header("Location: /Companies/Portfolio/login_sys/signup.php?error=passwordcheck&userid".$client_username."&mailid=".$client_mailid);
         exit();
     }
 
@@ -55,7 +55,7 @@ if (isset($_POST['signup-submit'])) {
         $stmt = mysqli_stmt_init($conn);
         //check stmt_prepare
         if (!mysqli_stmt_prepare($stmt, $sql)) {
-            header("Location: /Portfolio/Portfolio/login_sys/signup.php?error=sqlerror0");
+            header("Location: /Companies/Portfolio/login_sys/signup.php?error=sqlerror0");
             exit();
         }
         else {
@@ -67,7 +67,7 @@ if (isset($_POST['signup-submit'])) {
             $resultCheck = mysqli_stmt_num_rows($stmt);
 
             if ($resultCheck > 0) {
-                header("Location: /Portfolio/Portfolio/login_sys/signup.php?error=usertaken&mail=".$client_mailid);
+                header("Location: /Companies/Portfolio/login_sys/signup.php?error=usertaken&mail=".$client_mailid);
                 exit();
             }
             else {
@@ -78,7 +78,7 @@ if (isset($_POST['signup-submit'])) {
                 $stmt = mysqli_stmt_init($conn);
 
                 if(!mysqli_stmt_prepare($stmt, $sql)) {
-                    header("Location: /Portfolio/Portfolio/login_sys/signup.php?error=sqlerror1");
+                    header("Location: /Companies/Portfolio/login_sys/signup.php?error=sqlerror1");
                     exit();
                 }
                 else {
@@ -89,7 +89,7 @@ if (isset($_POST['signup-submit'])) {
                     mysqli_stmt_execute($stmt);
                     mysqli_stmt_store_result($stmt);
 
-                    header("Location: /Portfolio/Portfolio/index.php?signup=success");
+                    header("Location: /Companies/Portfolio/index.php?signup=success");
                     exit();
                 }
 
@@ -105,5 +105,5 @@ if (isset($_POST['signup-submit'])) {
 }
 
 else {
-    header("Location: /Portfolio/Portfolio/signup.php");
+    header("Location: /Companies/Portfolio/signup.php");
 }

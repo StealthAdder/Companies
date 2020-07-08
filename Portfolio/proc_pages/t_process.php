@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Support</title>
-    <link rel="stylesheet" href="/Portfolio/Portfolio/css/t_process.css">
+    <link rel="stylesheet" href="/Companies/Portfolio/css/t_process.css">
 </head>
 <body>
     <?php
@@ -47,7 +47,7 @@
     <header>
         <h1 id="th1">Tech Support</h1>
         <div id="dh1">
-            <span><a href="/Portfolio/Portfolio/index.php" class="menu1">Home</a></span> 
+            <span><a href="/Companies/Portfolio/index.php" class="menu1">Home</a></span> 
         </div>
     </header>
     <main id="cont">
@@ -76,6 +76,6 @@
     <footer>
         <h5 id="fh5">Portfolio Inc. 2020</h3>
     </footer>
-    <script src="/Portfolio/Portfolio/javascripts/goHome.js"></script>
+    <script src="/Companies/Portfolio/javascripts/goHome.js"></script>
 </body>
 </html>

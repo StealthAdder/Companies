@@ -8,10 +8,10 @@
 <body>
     <section class="#">
         <h1>Portfolio</h1>
-        <a href="/Portfolio/Portfolio/index.php">HOME</a>
+        <a href="/Companies/Portfolio/index.php">HOME</a>
         <br>
         <h3>Register</h1>
-        <form action="/Portfolio/Portfolio/login_sys/includes/signup.inc.php" method="POST" autocomplete="off">
+        <form action="/Companies/Portfolio/login_sys/includes/signup.inc.php" method="POST" autocomplete="off">
             <input type="text" name="cltname" placeholder="Full Name">
             <br>
             <input type="text" name="username" placeholder="Username">

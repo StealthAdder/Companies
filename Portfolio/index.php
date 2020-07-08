@@ -8,22 +8,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Corp</title>
-    <link rel="stylesheet" href="/Portfolio/Portfolio/css/style.css">
+    <link rel="stylesheet" href="/Companies/Portfolio/css/style.css">
 </head>
 <body>
     <header>
         <h1>Portfolio Inc.</h1>
         <nav id="dh1">
-            <span><a href="/Portfolio/Portfolio/index.php" class="menu1">Home</a></span> <span><a href="/Portfolio/Portfolio/contact.html" class="menu1">Tech Support</a></span>
-            <span><a href="/Portfolio/Portfolio/colorFlip/colorflip.html" class="menu1">Random Color</a></span>
+            <span><a href="/Companies/Portfolio/index.php" class="menu1">Home</a></span> <span><a href="/Companies/Portfolio/contact.html" class="menu1">Tech Support</a></span>
+            <span><a href="/Companies/Portfolio/colorFlip/colorflip.html" class="menu1">Random Color</a></span>
             <span>
             <?php
             if(isset($_SESSION['client_id'])) {
                 //logout
-                echo '<a class="menu1" href="/Portfolio/Portfolio/login_sys/includes/logout.inc.php">logout</a>';
+                echo '<a class="menu1" href="/Companies/Portfolio/login_sys/includes/logout.inc.php">logout</a>';
             }
             else {
-                echo '<a class="menu1" href="/Portfolio/Portfolio/login_sys/login.php">Sign In</a>';
+                echo '<a class="menu1" href="/Companies/Portfolio/login_sys/login.php">Sign In</a>';
             }
         ?>
             </span>
@@ -49,15 +49,15 @@
     <main>
         <div id="prodiv1">
             <h2 id="fp">Featured Profiles</h2>
-            <img id="imgelon" src="/Portfolio/Portfolio/img/Elon.jpg" alt="Elon Musk Photo"><br>
-            <a href="/Portfolio/Portfolio/pages/ElonMusk/elon.html" id="pt1">Elon Musk</a>
+            <img id="imgelon" src="/Companies/Portfolio/img/Elon.jpg" alt="Elon Musk Photo"><br>
+            <a href="/Companies/Portfolio/pages/ElonMusk/elon.html" id="pt1">Elon Musk</a>
         </div>
         <div id="sdiv">
             <h3 id="Ah3">About us</h3>
             <p id="ap">We are a potfolio Hosting Company. We start this one as a html project. Try with interest and time this grow into a Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda libero, exercitationem veritatis consequatur, voluptas perspiciatis pariatur illum repellat explicabo fugit distinctio, doloribus eligendi aperiam necessitatibus eum. Expedita amet perspiciatis aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, at numquam ut quae, officiis autem excepturi reiciendis assumenda maiores nesciunt aspernatur nulla. Asperiores mollitia alias vero molestiae voluptates rerum non?. LoL</p>
         </div>
     </main>
-    <script src="/Portfolio/Portfolio/javascripts/add-content.js"></script>
+    <script src="/Companies/Portfolio/javascripts/add-content.js"></script>
     <footer>
         <h5 id="fh5">Portfolio Inc. 2020</h3>
     </footer>
