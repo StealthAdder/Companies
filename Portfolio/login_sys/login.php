@@ -17,10 +17,25 @@
     <div class="block">
             <div class="block-div">
                 <h3 id="logintext">Log In</h3>
-                <form action="/Companies/Portfolio/login_sys/includes/login.inc.php" method="post" autocomplete="off">
                 <div class="inp-elements">
                     <img src="/Companies/Portfolio/img/loginlogo.png" alt="image" id="signup-logo">
                 </div>
+                <?php 
+                    // GET Error from URL
+                    if (isset($_GET['error'])) {
+                        if ($_GET['error'] == "emptyfields") {
+                            echo '<p class="loginerror">Fill in all fields!</p>';
+                        }
+                        else if ($_GET['error'] == "wrongpwd0") {
+                            echo '<p class="loginerror">Wrong Password!</p>';
+                        } else if($_GET['error'] == "nouser") {
+                            echo ('<p class="loginerror">Username Doesn`t Exist!</p>');
+                        } else {
+                            header("Location: /Companies/Portfolio/login_sys/login.php");
+                        }
+                    }
+                ?>
+                <form action="/Companies/Portfolio/login_sys/includes/login.inc.php" method="post" autocomplete="off">
                 <div class="inp-elements">
                     <input type="text" name="username" placeholder="Username/Mail ID">
                 </div>

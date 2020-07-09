@@ -104,3 +104,8 @@ button {
     text-align: right;
     margin-top: 0px;
 }
+
+.loginerror {
+    color:firebrick;
+    font-weight: bold;
+}

@@ -32,6 +32,11 @@
             echo "Error in connection Please check the connection" . mysqli_connect_errno();
         }
 
+        if (empty($qtype) || empty($msg)) {
+            header("Location: /Companies/Portfolio/contact.php?error=emptyfields");
+            exit();
+        }
+
         //running prepared stmts
         $sql = "INSERT INTO Client_query (person_name, person_mail, query_type, msg, time_stamp)
         VALUES (?, ?, ?, ?, ?)";
@@ -50,7 +55,7 @@
         }
     }
     else {
-        header("Location: /Companies/Portfolio/contact.php?error=SUCKER");
+        header("Location: /Companies/Portfolio/contact.php?error=fatalurl");
         exit();
     }
     ?>

@@ -27,6 +27,14 @@
     align-content: center;
 }
 
+.menus {
+    color: whitesmoke;
+    text-decoration: none;
+    padding-right: 25px;
+    padding-left: 25px;
+    align-content: center;
+}
+
 .block {
     display: flex;
     text-align: center;
@@ -67,4 +75,14 @@ input {
     padding: 5px 5px 5px 5px;
     text-align: right;
     margin-top: 0px;
+}
+
+.signuperror {
+    color:firebrick;
+    font-weight: bold;
+}
+
+.signupsuccess {
+    color: rgb(13, 148, 13);
+    font-weight: bold;
 }

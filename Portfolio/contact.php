@@ -29,6 +29,14 @@ session_start();
         <div id="md2">
             <h2 id="gint">Queries</h2>
             <div id="frm">
+                <?php
+                //GET Error URL
+                    if (isset($_GET['error'])) {
+                        if ($_GET['error'] == "emptyfields") {
+                            echo '<p class="fillerror">Fill in all fields!</p>';
+                        }
+                    }
+                ?>
                 <form name="RegForm" action="/Companies/Portfolio/proc_pages/t_process.php" onsubmit="return validation()" method="post" autocomplete="off">
                     <table>
                         <tr>

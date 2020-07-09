@@ -109,3 +109,8 @@ body {
 #name, #mail, #phone, #lym {
     padding-left: 10px;
 }
+
+.fillerror {
+    color: firebrick;
+    font-weight: bold;
+}

@@ -65,7 +65,7 @@ if (isset($_POST['login-submit'])) {
             }
             // user doesn't exist
             else {
-                header("Location: /Companies/Portfolio/index.php?error=nouser");
+                header("Location: /Companies/Portfolio/login_sys/login.php?error=nouser");
                 exit();
             }
 

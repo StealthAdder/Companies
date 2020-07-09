@@ -5,7 +5,7 @@
 if (isset($_POST['signup-submit'])) {
 
     //fetch s-vars
-    $client_name = $_POST['cltname'];
+    $client_name = strtoupper($_POST['cltname']);
     $client_username = $_POST['username'];
     $client_mailid = $_POST['mailid'];
     $client_password = $_POST['pwd'];
@@ -37,7 +37,7 @@ if (isset($_POST['signup-submit'])) {
     }
     //E4 - VALIDATION FOR USERNAME
     elseif (!preg_match("/^[a-zA-Z0-9]*$/", $client_username)) {
-        header("Location: /Companies/Portfolio/login_sys/signup.php?error=invlaiduid&mail=".$client_mailid);
+        header("Location: /Companies/Portfolio/login_sys/signup.php?error=invaliduid&mail=".$client_mailid);
     }
 
     //E5 - PASSWORD - REPEAT MISMATCHED
@@ -89,7 +89,7 @@ if (isset($_POST['signup-submit'])) {
                     mysqli_stmt_execute($stmt);
                     mysqli_stmt_store_result($stmt);
 
-                    header("Location: /Companies/Portfolio/index.php?signup=success");
+                    header("Location: /Companies/Portfolio/login_sys/signup.php?signup=success");
                     exit();
                 }
 
