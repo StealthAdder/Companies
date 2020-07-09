@@ -1,0 +1,70 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.headh1 {
+    background-color: black;
+    color: whitesmoke;
+    padding-left: 10px;
+    padding: 25px;
+    margin-bottom: 0px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#dh1 {
+    background-color: black;
+    padding: 20px 10px 20px 10px;
+}
+
+
+.menu1 {
+    color: whitesmoke;
+    text-decoration: none;
+    padding-right: 50px;
+    padding-left: 20px;
+    align-content: center;
+}
+
+.block {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.block-div {
+    background-color: lightblue;
+    margin: 5px;
+    width: 300px;
+    padding: 20px;
+}
+
+.signup-link-div {
+    padding: 10px 10px;
+}
+
+#signup-logo {
+    width: 105px;
+    height: 105px;
+}
+
+#signtext {
+    margin-bottom: 0px;
+    margin-top: 10px;
+    font-size: xx-large;
+}
+
+input {
+    width: 200px;
+    height: 20px;
+}
+
+#fh5 {
+    background-color: black;
+    color: whitesmoke;
+    padding: 5px 5px 5px 5px;
+    text-align: right;
+    margin-top: 0px;
+}

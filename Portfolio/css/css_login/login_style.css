@@ -1,0 +1,84 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.headh1 {
+    background-color: black;
+    color: whitesmoke;
+    padding-left: 10px;
+    padding: 25px;
+    margin-bottom: 0px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#dh1 {
+    background-color: black;
+    padding: 20px 10px 20px 10px;
+}
+
+.menu1 {
+    color: whitesmoke;
+    text-decoration: none;
+    padding-right: 50px;
+    padding-left: 20px;
+    align-content: center;
+}
+
+.nav-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:lightblue;
+}
+
+.nav-li {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 16px 14px;
+}
+
+.nav-a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.block {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.block-div{
+    background-color: lightblue;
+    margin: 5px;
+    width: 300px;
+    padding: 20px;
+    /* line-height: 20px; */
+}
+
+
+#signup-logo {
+    width: 105px;
+    height: 105px;
+}
+
+.inp-elements {
+    padding: 10px 10px;
+}
+
+
+
+/* footer */
+#fh5 {
+    background-color: black;
+    color: whitesmoke;
+    padding: 5px 5px 5px 5px;
+    text-align: right;
+    margin-top: 0px;
+}
