@@ -14,7 +14,14 @@
     <header>
         <h1>Portfolio Inc.</h1>
         <nav id="dh1">
-            <span><a href="/Companies/Portfolio/index.php" class="menu1">Home</a></span> <span><a href="/Companies/Portfolio/contact.html" class="menu1">Tech Support</a></span>
+            <span><a href="/Companies/Portfolio/index.php" class="menu1">Home</a></span>
+            <span>
+                <?php
+                    if(isset($_SESSION['client_name'])) {
+                        echo '<a href="/Companies/Portfolio/contact.php" class="menu1">Tech Support</a>';
+                    }
+                ?>
+            </span>
             <span><a href="/Companies/Portfolio/colorFlip/colorflip.html" class="menu1">Random Color</a></span>
             <span>
             <?php
@@ -29,6 +36,10 @@
             </span>
         </nav>
         <div id="gret">
+            <!-- User name is displayed -->
+            <?php
+                echo $_SESSION['client_name'];
+            ?>
             <span id="greetings"></span>
             <span id="dtime">
                 <span>Current Time: </span>

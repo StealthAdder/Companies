@@ -15,7 +15,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color:lightblue;
 }
 
 
@@ -26,13 +26,14 @@
     padding: 23px 16px;
 }
 
-.nav-a:hover {
+/* .nav-a:hover {
     background-color: #111111;
     padding: 12px 14px;
-}
+} */
 
 .nav-a {
-    color: white;
+    color: black;
+    font-weight: bold;
     text-decoration: none;
 }
 

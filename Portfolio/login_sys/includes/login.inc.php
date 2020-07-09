@@ -49,9 +49,11 @@ if (isset($_POST['login-submit'])) {
                     //password matched so allow user
                     //so start a session
                     session_start();
-                    //get data for session elements client_id and client_uname
+                    //get data for session elements client_id and client_uname others
                     $_SESSION['client_id'] = $row['clt_id'];
                     $_SESSION['client_uname'] = $row['clt_username'];
+                    $_SESSION['client_name'] = $row['clt_name'];
+                    $_SESSION['client_mail'] = $row['clt_mail'];
 
                     header("Location: /Companies/Portfolio/index.php?login=SUCCESS");
                     exit();
@@ -71,7 +73,8 @@ if (isset($_POST['login-submit'])) {
         }
 
     }
-
+    mysqli_stmt_close($stmt);
+    mysqli_close($conn);
 }
 else {
     header("Location: /Companies/Portfolio/login_Sys/login.php");

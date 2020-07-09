@@ -1,3 +1,13 @@
+<?php
+//start session
+session_start();
+    if(isset($_SESSION['client_id'])) {
+    }
+    else {
+        header("Location: /Companies/Portfolio/index.php?error=redirected_fatal_url");
+        exit();
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,45 +28,39 @@
         <div id="md2">
             <h2 id="gint">Queries</h2>
             <div id="frm">
-                <form name="RegForm" action="/Companies/Portfolio/proc_pages/t_process.php" onsubmit="return validation()" method="post" autocomplete="on">
-
+                <form name="RegForm" action="/Companies/Portfolio/proc_pages/t_process.php" onsubmit="return validation()" method="post" autocomplete="off">
                     <table>
                         <tr>
-                            <td>Full Name :</td>
-                            <td><input type="text" name="flName"></td>
-                        </tr>
-                        <tr>
-                            <td>Maild Id :</td>
-                            <td><input type="text" name="mail"></td>
-                        </tr>
-                        <tr>
                             <td>
-                                Phone No:
+                                <span><label for="">Subject</label></span>
                             </td>
                             <td>
-                                <input type="text" name="phoneNo">
+                                <select name="querytype">
+                                    <option value="" disabled selected>Query Type</option>
+                                    <option value="TechEnquiry">Techincal Enquiry</option>
+                                    <option value="Sales">Sales-Related</option>
+                                    <option value="Others">Others</option>
+                                </select>
                             </td>
                         </tr>
                         <tr>
-                            <td>
-                                Message:  
-                            </td>
-                            <td>
-                                <textarea name="msg" id="msg" cols="80" rows="8"></textarea>
-                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Message:</td>
+                            <td><textarea name="msg" id="msg" cols="80" rows="8" placeholder="Message / Query"></textarea></td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="submit" value="Send" id="sumbit">
+                                <button type="submit" name="contact-submit">Send</button>
                             </td><br>
                         </tr>
                     </table>                
                 </form>
-                
+                <p><strong>Note: </strong>We usually don't respond.. </p>
             </div>
         </div>
-
-        <h2 id="cb">Tech Support</h2>
+        <!-- <h2 id="cb">Tech Support</h2>
         <div id="md1">
             <h2 id="cb1">Tech Support - TexSys Corp.</h2>
             <h3 id="dcih3">Developer's - Contact info:</h3>
@@ -65,7 +69,7 @@
                 <span id="DSspan">DarkSchokolade<a href="https://github.com/DarkSchokolade" target="_blank" class="adevgit"> : GitHub</a></span>
             </div>
             <h4 id="about_h5">Developed by TexSys Corp.</h4>
-        </div>
+        </div> -->
     </main>
     <footer>
         <h5 id="fh5">Portfolio Inc. 2020</h3>

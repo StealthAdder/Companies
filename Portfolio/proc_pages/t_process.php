@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,11 +11,14 @@
 </head>
 <body>
     <?php
+    if (isset($_POST['contact-submit'])) {
+
         //declare short vars
-        $fname = $_POST['flName'];
-        $mail= $_POST['mail'];
-        $phoneNo = $_POST['phoneNo'];
+        $name = $_SESSION['client_name'];
+        $mail= $_SESSION['client_mail'];
+        $qtype = $_POST['querytype'];
         $msg = $_POST['msg'];
+        $time_stamp = date("d-m-Y H:i:s");
 
 
         include ("/var/www/html/config_portfolio/DB-config.php");
@@ -26,23 +32,35 @@
             echo "Error in connection Please check the connection" . mysqli_connect_errno();
         }
 
-        $sql = "INSERT INTO Client_Msg (flname, mail, phoneNo, msg)
-        VALUES ('".$fname."','".$mail."','".$phoneNo."','".$msg."')";
+        //running prepared stmts
+        $sql = "INSERT INTO Client_query (person_name, person_mail, query_type, msg, time_stamp)
+        VALUES (?, ?, ?, ?, ?)";
 
-        $result = mysqli_query($conn, $sql);
-
-        $rows_affected = mysqli_affected_rows($result);
-
+        $stmt = mysqli_stmt_init($conn);
+        //checking Prep
+        if (!mysqli_stmt_prepare($stmt, $sql)) {
+            header("Location: /Companies/Portfolio/contact.php?error=sqlerror0");
+            exit();
+        }
+        else {
+            //no issues
+            mysqli_stmt_bind_param($stmt, "sssss", $name, $mail, $qtype, $msg, $time_stamp);
+            mysqli_stmt_execute($stmt);
+            $result = mysqli_stmt_store_result($stmt);
+        }
         if($result){
         } else {
             echo "An error occured during processing the file: The data entry didnt happen.";
         }
-        
         mysqli_free_result($result);
 
         //close
         mysqli_close($conn);
-        
+    }
+    else {
+        header("Location: /Companies/Portfolio/contact.php?error=SUCKER");
+        exit();
+    }   
     ?>
     <header>
         <h1 id="th1">Tech Support</h1>
