@@ -48,19 +48,11 @@
             mysqli_stmt_execute($stmt);
             $result = mysqli_stmt_store_result($stmt);
         }
-        if($result){
-        } else {
-            echo "An error occured during processing the file: The data entry didnt happen.";
-        }
-        mysqli_free_result($result);
-
-        //close
-        mysqli_close($conn);
     }
     else {
         header("Location: /Companies/Portfolio/contact.php?error=SUCKER");
         exit();
-    }   
+    }
     ?>
     <header>
         <h1 id="th1">Tech Support</h1>
@@ -70,25 +62,30 @@
     </header>
     <main id="cont">
         <div id="mdiv1">
-            <h2 id="rp">Requested Processed....!</h2>
-            <p id="info">Our Developers will contact you soon.</p>
-        </div>
-        <div id=mdiv2>
-            <h2 id="smy">Summary</h2>
-            <p id="dsum">Detailed Summary about your Query:</p>
-            <div id="summary">
-                <?php
-                    echo "Your Name: ".$_POST["flName"];
-                    echo "<br>";
-                    echo "Your Mail id: ".$_POST["mail"];
-                    echo "<br>";
-                    echo "Your Phone No: ".$_POST["phoneNo"];
-                    echo "<br>";
-                    echo "Your Message: ".$_POST["msg"];
-                    echo "<br>";
+            <?php if ($result) { ?>
+                <h2 class ="rp">Requested Processed....!</h2>
+                <p class="info">Our Developers will contact you soon.</p>
+                <div id=mdiv2>
+                    <h2 id="smy">Summary</h2>
+                    <p id="dsum">Detailed Summary about your Query:</p>
+                    <div id="summary">
+                        <?php 
+                            echo '<span id="info"><strong>Query Type: <strong></span>'. $qtype; 
+                            echo '<br>';
+                            echo '<span id="info"><strong>Your message/Query: </strong></span>'. $msg;
+                        ?>
+                        <p id="thanks">Thanks for contacting Tech Support</p>
+                    </div>
+                </div>
+            <?php } else {?>
+                <h2 class ="rp">Requested Failed..</h2>
+                <p class = "info">An error occured during processing the file: The data entry didnt happen.</p>
+                <p class= "info">Report this with <a href="https://github.com/StealthAdder/Companies/issues/new/choose">Github/Companies</a> Raise a Issue</p>
+                <?php 
+                    mysqli_free_result($result);
+                    mysqli_close($conn);    
                 ?>
-                <p id="thanks">Thanks for contacting Tech Support</p>
-            </div>
+            <?php }?>
         </div>
     </main>
     <footer>
