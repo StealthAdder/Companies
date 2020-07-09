@@ -25,12 +25,20 @@
     align-content: center;
 }
 
+.menus {
+    color: whitesmoke;
+    text-decoration: none;
+    padding-right: 25px;
+    padding-left: 25px;
+    align-content: center;
+}
+
 .nav-ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color:lightblue;
+    background-color:#add8e6;
 }
 
 .nav-li {
@@ -72,8 +80,22 @@
     padding: 10px 10px;
 }
 
+input {
+    width: 200px;
+    height: 20px;
+}
 
 
+#logintext {
+    margin-bottom: 0px;
+    margin-top: 10px;
+    font-size: xx-large;
+}
+ 
+button {
+    width: 66px;
+    height: 26px;
+}
 /* footer */
 #fh5 {
     background-color: black;

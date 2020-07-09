@@ -11,25 +11,24 @@
     <h1 class="headh1">Portfolio Inc.</h1>
         <nav id="dh1">
             <span><a href="/Companies/Portfolio/index.php" class="menu1">Home</a></span>
+            <span><a href="/Companies/Portfolio/login_sys/signup.php" class="menus" style="float:right">Sign Up</a></span>
         </nav>
     </header>
     <div class="block">
             <div class="block-div">
-                <h3>Sign In</h3>
+                <h3 id="logintext">Log In</h3>
                 <form action="/Companies/Portfolio/login_sys/includes/login.inc.php" method="post" autocomplete="off">
                 <div class="inp-elements">
                     <img src="/Companies/Portfolio/img/loginlogo.png" alt="image" id="signup-logo">
                 </div>
                 <div class="inp-elements">
-                    <input type="text" name="username" placeholder="Username/MailID">
+                    <input type="text" name="username" placeholder="Username/Mail ID">
                 </div>
                 <div class="inp-elements">
                     <input type="password" name="pwd" placeholder="Password">
                 </div>
                 <div class="inp-elements">
-                    <button type="submit" name="login-submit">Sign In</button>
-                    or
-                    <button><a href="/Companies/Portfolio/login_sys/signup.php" style="text-decoration: none; color: black;">Sign Up</a></button>
+                    <button type="submit" name="login-submit">Log In</button>
                 </div>
                 </form>
             </div>

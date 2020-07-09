@@ -15,7 +15,7 @@
     </header>
         <div class="block">
             <div class="block-div">
-                <h3 id="signtext">SIGN UP</h3>
+                <h3 id="signtext">Sign Up</h3>
                 <form action="/Companies/Portfolio/login_sys/includes/signup.inc.php" method="POST" autocomplete="off">
                     <div class="signup-link-div">
                         <img src="/Companies/Portfolio/img/loginlogo.png" alt="image" id="signup-logo">

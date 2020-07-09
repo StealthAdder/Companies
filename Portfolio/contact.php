@@ -21,7 +21,8 @@ session_start();
     <header>
         <h1 id="mh1">Portfolio Inc.</h1>
         <div id="dh1">
-            <span><a href="/Companies/Portfolio/index.php" class="menu1">Home</a></span> 
+            <span><a href="/Companies/Portfolio/index.php" class="menu1">Home</a></span>
+            <span><a class="menus" href="/Companies/Portfolio/login_sys/includes/logout.inc.php" style="float:right">Log out</a></span>
         </div>
     </header>
     <main>
