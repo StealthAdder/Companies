@@ -1,13 +1,28 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 8px;
+}
+
 #logo {
     width: 40px;
     height: 40px;
     float: left; /* to keep all of them on left and inline */
     display: block;
     text-align: center;
-    padding: 12px 14px;
+    /* padding: 8px, 16px, 8px, 16px; */
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 8px;
+
 }
 
 #nav-ul {
@@ -19,25 +34,26 @@
 }
 
 
+
 .nav-li {
     float: left; /* to keep all of them on left and inline */
     display: block;
     text-align: center;
-    padding: 23px 16px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-/* .nav-a:hover {
-    background-color: #111111;
-    padding: 12px 14px;
-} */
 
 .nav-a {
     color: black;
     font-weight: bold;
     text-decoration: none;
+    font-size: large;
 }
 
-.company {
+.section {
     display: flex; 
     text-align: center;
     width: auto;
@@ -45,7 +61,7 @@
     /* centers all the div */
 }
 
-.company .sub-company {
+.section .section-block {
     background-color: lightblue;
     margin: 5px;
     width: 350px;
@@ -54,16 +70,18 @@
     position: relative;
 }
 
-.company-img {
-    width: 100px;
-    height: 100px;
-    transform: translateX(+125%)
+#client_info_icon, #client_query_icon {
+    width: 120px;
+    height: 120px;
+    padding-top:15px;
+    padding-bottom:15px;
 }
 
-#portfolio-logo, #Aether-logo, #aero-tex-logo {
-    width: 100px;
-    height: 100px;
-}
+/* .choice-title {
+    padding-top: 15px;
+} */
+
+
 
 /* footer */
 

@@ -22,7 +22,9 @@ function updateMessage() {
     let el = document.getElementById('greetings');
     let el2 = document.getElementById('Time');
 
-    el.textContent = greetings;
+    if (el !== null) {
+        el.textContent = greetings;
+    }
     el2.textContent = timeNow;
 
 }

@@ -1,13 +1,27 @@
 * {
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 8px;
+}
+
 #logo {
     width: 40px;
     height: 40px;
     float: left; /* to keep all of them on left and inline */
     display: block;
     text-align: center;
-    padding: 12px 14px;
+    /* padding: 8px, 16px, 8px, 16px; */
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 8px;
+
 }
 
 #nav-ul {
@@ -18,12 +32,14 @@
     background-color:lightblue;
 }
 
-
 .nav-li {
     float: left; /* to keep all of them on left and inline */
     display: block;
     text-align: center;
-    padding: 23px 16px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* .nav-a:hover {
@@ -35,45 +51,50 @@
     color: black;
     font-weight: bold;
     text-decoration: none;
+    font-size: large;
 }
 
-.company {
+
+.block {
     display: flex; 
-    text-align: center;
     width: auto;
     justify-content: center;
     /* centers all the div */
 }
 
-.company .sub-company {
-    background-color: lightblue;
-    margin: 5px;
-    width: 350px;
-    padding: 20px;
-    line-height: 20px;
-    position: relative;
-}
-
-.company-img {
-    width: 100px;
-    height: 100px;
-    transform: translateX(+125%)
-}
-
-#portfolio-logo, #Aether-logo, #aero-tex-logo {
-    width: 100px;
-    height: 100px;
-}
-
+ /* Design for table */
+ .content-table {
+    border-collapse: collapse;
+    margin-bottom: 1px;
+    font-weight: bold;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+  }
+  
+  .content-table thead tr {
+    background-color: darkcyan;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .content-table th,
+  .content-table td {
+    padding: 12px 15px;
+  }
+  
+  .content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
 /* footer */
-
 #fh5 {
     padding-right: 5px;
     /* text-align: right; */
     float: right;
     /* margin-top: 0px; */
 }
-
 
 #dtime {
     text-align: left;
