@@ -1,0 +1,68 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#logo {
+    width: 40px;
+    height: 40px;
+    float: left; /* to keep all of them on left and inline */
+    display: block;
+    text-align: center;
+    padding: 12px 14px;
+}
+
+#nav-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:lightblue;
+}
+
+
+.nav-li {
+    float: left; /* to keep all of them on left and inline */
+    display: block;
+    text-align: center;
+    padding: 23px 16px;
+}
+
+/* .nav-a:hover {
+    background-color: #111111;
+    padding: 12px 14px;
+} */
+
+.nav-a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.company {
+    display: flex; 
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    /* centers all the div */
+}
+
+.company .sub-company {
+    background-color: lightblue;
+    margin: 5px;
+    width: 350px;
+    padding: 20px;
+    line-height: 20px;
+    position: relative;
+}
+
+.company-img {
+    width: 100px;
+    height: 100px;
+    transform: translateX(+125%)
+}
+
+#portfolio-logo, #Aether-logo, #aero-tex-logo {
+    width: 100px;
+    height: 100px;
+}
+
+

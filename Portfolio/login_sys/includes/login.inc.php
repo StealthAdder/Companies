@@ -16,7 +16,7 @@ if (isset($_POST['login-submit'])) {
     
     //E1 - empty fields
     if (empty($mailuid) || empty($password)) {
-        header("Location: /Portfolio/login_sys/login.php?error=emptyfields");
+        header("Location: /Companies/Portfolio/login_sys/login.php?error=emptyfields");
         exit();
     }
     //V1 - CHECK IF USER EXISTS
@@ -27,7 +27,7 @@ if (isset($_POST['login-submit'])) {
 
         //check stmt prep
         if (!mysqli_stmt_prepare($stmt, $sql)) {
-            header("Location: /Portfolio/login_sys/login.php?error=sqlerror0");
+            header("Location: /Companies/Portfolio/login_sys/login.php?error=sqlerror0");
         }
         //no error so continue
         else {
@@ -42,28 +42,30 @@ if (isset($_POST['login-submit'])) {
 
                 //checking password
                 if ($pwdCheck == false) {
-                    header("Location: /Portfolio/login_sys/login.php?error=wrongpwd0");
+                    header("Location: /Companies/Portfolio/login_sys/login.php?error=wrongpwd0");
                     exit();
                 }
                 else if ($pwdCheck == true) {
                     //password matched so allow user
                     //so start a session
                     session_start();
-                    //get data for session elements client_id and client_uname
+                    //get data for session elements client_id and client_uname others
                     $_SESSION['client_id'] = $row['clt_id'];
                     $_SESSION['client_uname'] = $row['clt_username'];
+                    $_SESSION['client_name'] = $row['clt_name'];
+                    $_SESSION['client_mail'] = $row['clt_mail'];
 
-                    header("Location: /Portfolio/index.php?login=SUCCESS");
+                    header("Location: /Companies/Portfolio/index.php?login=SUCCESS");
                     exit();
                 }
                 else {
-                    header("Location: /Portfolio/index.php?error=seriouswrongpwd1");
+                    header("Location: /Companies/Portfolio/index.php?error=seriouswrongpwd1");
                     exit();
                 }
             }
             // user doesn't exist
             else {
-                header("Location: /Portfolio/index.php?error=nouser");
+                header("Location: /Companies/Portfolio/login_sys/login.php?error=nouser");
                 exit();
             }
 
@@ -71,9 +73,10 @@ if (isset($_POST['login-submit'])) {
         }
 
     }
-
+    mysqli_stmt_close($stmt);
+    mysqli_close($conn);
 }
 else {
-    header("Location: /Portfolio/login_Sys/login.php");
+    header("Location: /Companies/Portfolio/login_Sys/login.php");
     exit();
 }

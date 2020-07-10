@@ -21,8 +21,16 @@ h1 {
 .menu1 {
     color: whitesmoke;
     text-decoration: none;
-    padding-right: 50px;
-    padding-left: 20px;
+    padding-right: 30px;
+    padding-left: 25px;
+    align-content: center;
+}
+
+.menus {
+    color: whitesmoke;
+    text-decoration: none;
+    padding-right: 25px;
+    padding-left: 25px;
     align-content: center;
 }
 
@@ -39,31 +47,20 @@ h1 {
     font-size: x-large;
 }
 
+#portfolio-logo {
+    width: 150px;
+    height: 150px;
+}
+
 #ap {
     text-align: justify;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-#sul {
-    padding-left: 0px;
-    
-}
-
-#ulis {
-    padding-left: 30px;
-}
-
-.uli {
-    list-style-type: none;
-    display: inline;
-    padding: 0px 10px 0px 10px;
-    font-size: x-large;
-}
-
 #prodiv1 {
     padding-top: 5px;
-    background-color: lightsteelblue;
+    background-color: cornflowerblue;
     padding-bottom: 5px;
 }
 
@@ -83,25 +80,19 @@ h1 {
 
 #fp {
     margin-top: 0px;
+    padding-left: 5px;
 }
 
 #fh5 {
-    background-color: black;
-    color: whitesmoke;
-    padding: 5px 5px 5px 5px;
-    text-align: right;
-    margin-top: 0px;
+    padding-right: 5px;
+    /* text-align: right; */
+    float: right;
+    /* margin-top: 0px; */
 }
-
-#sh3 {
-    padding-left: 5px;
-    font-size: x-large;
-}
-
 
 
 #gret {
-    background-color: rgb(0, 132, 255);
+    background-color: cornflowerblue;
     margin-bottom: 0px;
     padding: 10px;
     margin-top: 0px;
@@ -112,10 +103,23 @@ h1 {
     font-weight: bolder;
 }
 
+#namelisting {
+    font-size: large;
+    font-weight: bolder;
+}
+
 #dtime {
-    text-align: right;
+    text-align: left;
     font-weight: bold;
     display: block;
+    color: whitesmoke;
+    background-color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#CT {
+    padding-left: 5px;
 }
 
 .btn {
