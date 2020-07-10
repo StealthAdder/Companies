@@ -1,0 +1,124 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 8px;
+}
+#logo {
+    width: 40px;
+    height: 40px;
+    float: left; /* to keep all of them on left and inline */
+    display: block;
+    text-align: center;
+    /* padding: 8px, 16px, 8px, 16px; */
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 8px;
+
+}
+
+#nav-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:lightblue;
+}
+
+
+.nav-li {
+    float: left; /* to keep all of them on left and inline */
+    display: block;
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* .nav-a:hover {
+    background-color: #111111;
+    padding: 12px 14px;
+} */
+
+.nav-a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: large;
+}
+
+.welcome-dev {
+    background-color: royalblue; 
+    /* better color pls */
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+/* flex for main login div*/
+.login-block {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.login-block-sub{
+    background-color: lightblue;
+    margin: 5px;
+    width: 300px;
+    padding: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /* line-height: 20px; */
+}
+
+#dev-icon {
+    width: 180px;
+    height: 180px;
+}
+
+.inp-elements {
+    padding: 10px 10px;
+}
+
+input {
+    width: 200px;
+    height: 20px;
+}
+
+button {
+    width: 66px;
+    height: 26px;
+}
+
+/* Footer Style */
+#dtime {
+    text-align: left;
+    font-weight: bold;
+    display: block;
+    color: whitesmoke;
+    background-color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+#CT {
+    padding-left: 5px;
+}
+
+#fh5 {
+    padding-right: 5px;
+    /* text-align: right; */
+    float: right;
+    /* margin-top: 0px; */
+}

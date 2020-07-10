@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TexSys Corp.</title>
     <link rel="stylesheet" href="/Companies/TexSys_Corp/css/style.css">
+    <link rel="icon" href="/Companies/TexSys_Corp/img/logo.jpg">
 </head>
 <body>
     <h1>TexSys Corp.</h1>
     <header>
         <nav>
             <ul id="nav-ul">
-                <li><a href="/Companies/index.html" class="nav-a"><img src="/Companies/TexSys_Corp/img/logo.jpg" alt="Logo" id="logo"></a></li>
-                <li class="nav-li"><a href="/Companies/index.html" class="nav-a">Home</a></li>
+                <li><a href="/Companies/index.php" class="nav-a"><img src="/Companies/TexSys_Corp/img/logo.jpg" alt="Logo" id="logo"></a></li>
+                <li class="nav-li"><a href="/Companies/index.php" class="nav-a">Home</a></li>
                 <li class="nav-li"><a href="#" class="nav-a">Sales</a></li>
                 <li class="nav-li"><a href="#" class="nav-a">About us</a></li>
+                <li class="nav-li" style="float: right"><a href="/Companies/TexSys_Corp/Dev-workspace/Dev_login.php" class="nav-a">Dev Log-in</a></li>
             </ul>
         </nav>
     </header>
@@ -41,8 +43,14 @@
             </div>
         </div>
     </main>
+    <script src="/Companies/Portfolio/javascripts/add-content.js"></script>
     <footer>
-        <!-- footer code -->
+        <span id="dtime">
+            <span id="CT">Current Time: </span>
+            <span id="Time">Time</span>
+            <span>IST</span>
+            <span id="fh5">Portfolio Inc. 2020</span>
+        </span>
     </footer>
 </body>
 </html>

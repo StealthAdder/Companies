@@ -1,5 +1,13 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 8px;
 }
 #logo {
     width: 40px;
@@ -7,7 +15,12 @@
     float: left; /* to keep all of them on left and inline */
     display: block;
     text-align: center;
-    padding: 12px 14px;
+    /* padding: 8px, 16px, 8px, 16px; */
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 8px;
+
 }
 
 #nav-ul {
@@ -23,7 +36,10 @@
     float: left; /* to keep all of them on left and inline */
     display: block;
     text-align: center;
-    padding: 23px 16px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* .nav-a:hover {
@@ -35,6 +51,18 @@
     color: black;
     font-weight: bold;
     text-decoration: none;
+    font-size: large;
+}
+
+
+.welcome-dev {
+    background-color: royalblue; 
+    /* better color pls */
+    /* padding-left: 10px; */
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    font-size: x-large;
 }
 
 .company {
@@ -42,11 +70,12 @@
     text-align: center;
     width: auto;
     justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 140px;
     /* centers all the div */
 }
 
 .company .sub-company {
-    background-color: lightblue;
     margin: 5px;
     width: 350px;
     padding: 20px;
@@ -65,8 +94,12 @@
     height: 100px;
 }
 
-/* footer */
+.company-title {
+    padding-top: 10px;
+    font-size: large;
+}
 
+/* footer */
 #fh5 {
     padding-right: 5px;
     /* text-align: right; */

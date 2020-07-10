@@ -22,7 +22,7 @@
                     }
                 ?>
             </span>
-            <span><a href="/Companies/Portfolio/colorFlip/colorflip.html" class="menu1">Random Color</a></span>
+            <span><a href="/Companies/index.php" class="menu1">TexSys Corp.</a></span>
             <span>
                 <?php
                     if(isset($_SESSION['client_id'])) {
@@ -36,7 +36,7 @@
             </span>
         </nav>
         <div id="gret">
-            <span id="greetings"></span>
+            <span id="greetings">Loading.....</span>
             <!-- User name is displayed -->
             <?php
                 if (isset($_SESSION['client_name'])) {
