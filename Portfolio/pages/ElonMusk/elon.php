@@ -1,3 +1,13 @@
+<?php
+    session_start();
+
+    if(isset($_SESSION['client_id'])) {
+    }
+    else {
+        header("Location: /Companies/Portfolio/index.php?error=redirected_fatal_url");
+        exit();
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

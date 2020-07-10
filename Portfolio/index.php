@@ -53,7 +53,7 @@
             <div id="prodiv1">
                 <h2 id="fp">Featured Profiles</h2>
                 <img id="imgelon" src="/Companies/Portfolio/img/Elon.jpg" alt="Elon Musk Photo"><br>
-                <a href="/Companies/Portfolio/pages/ElonMusk/elon.html" id="pt1">Elon Musk</a>
+                <a href="/Companies/Portfolio/pages/ElonMusk/elon.php" id="pt1">Elon Musk</a>
             </div>
         <?php }?>
         <div id="sdiv">
