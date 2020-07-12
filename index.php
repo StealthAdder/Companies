@@ -49,7 +49,7 @@
             <span id="CT">Current Time: </span>
             <span id="Time">Time</span>
             <span>IST</span>
-            <span id="fh5">Portfolio Inc. 2020</span>
+            <span id="fh5">TexSys Corp. 2020</span>
         </span>
     </footer>
 </body>

@@ -33,7 +33,7 @@
                 <h4 class="choice-title">Client Information</h4>
             </div>
             <div class="section-block">
-                <div class="block-img"><a href="/Companies/TexSys_Corp/Dev-workspace/dev-client_query.php"><img src="/Companies/TexSys_Corp/Dev-workspace/workspace/css/img/client_query_icon.jpg" alt="client query" id="client_query_icon"></a></div>
+                <div class="block-img"><a href="/Companies/TexSys_Corp/Dev-workspace/workspace/dev-client_query.php"><img src="/Companies/TexSys_Corp/Dev-workspace/workspace/css/img/client_query_icon.jpg" alt="client query" id="client_query_icon"></a></div>
                 <h4 class="choice-title">Client_Query</h4>
             </div>
         </div>
