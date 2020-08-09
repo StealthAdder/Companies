@@ -31,7 +31,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos itaque vero quibusdam laborum placeat unde exercitationem vel officiis quisquam natus voluptate blanditiis repudiandae, inventore, voluptatum earum. Eaque deserunt in temporibus?</p>
             </div>
             <div class="sub-company">
-                <div class="company-img"><a href=""><img src="/Companies/TexSys_Corp/img/Aether Corp icon.png" alt="Aether Corp logo" id="Aether-logo"></a>
+                <div class="company-img"><a href="Aether_Corp\index.html"><img src="/Companies/TexSys_Corp/img/Aether Corp icon.png" alt="Aether Corp logo" id="Aether-logo"></a>
                 </div>
                 <h5>AETHER Corp.</h5>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt perferendis, inventore sed reprehenderit voluptatum vero? Quidem sint debitis sed voluptate deserunt voluptatum quam aut voluptates! Nostrum a iusto excepturi nesciunt.</p>

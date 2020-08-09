@@ -1,0 +1,95 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ /*bg image*/
+ header{
+   background-image: url(../images/ll.jfif);
+   height: 100vh;
+   background-size: cover;
+   background-position: center;
+ }
+
+ /*logo*/
+ .logo img{
+   padding: 10px -9px;
+   width: 40px;
+   height: 38px;
+   float: left;
+ }
+h1{
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+ text-align: center;
+ margin-top: 50px;
+}
+.para{
+  padding: 60px;
+}
+.topnav {
+    background-color: #0004;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: rgb(0, 217, 255);
+    color: white;
+  }
+  
+  /* positioning search bar*/
+  .search{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-250%);
+  }
+
+  /*style search bar*/
+  input{
+    border: 3px solid #043d1c;
+    height: 40px;
+    width: 500px;
+    border-radius: 50px;
+    padding: 0 11px;
+  }
+
+  /*BUTTON*/
+  .button{
+    margin-top: 130px;
+    margin-left: 600px;
+    
+  }
+
+  /*styling button*/
+  .btn{
+    border: 5px solid black;
+    padding:  10px 30px;
+    color: black;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 13px;
+    background-color: white;
+  }
+
+  /*added hover effect to button*/
+  .btn:hover{
+    background-color: rgb(49, 199, 236);
+  }
