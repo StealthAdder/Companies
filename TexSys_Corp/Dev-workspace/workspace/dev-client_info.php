@@ -1,7 +1,7 @@
 <?php 
     session_start();
     if (!isset($_SESSION['userId'])) {
-        header("Location: /Companies/TexSys_Corp/Dev-workspace/Dev_login.php?error=fatal_url");
+        header("Location: /Companies/TexSys_Corp/Dev-workspace/Dev_Login.html?error=fatal_url");
         exit();
     }
 ?>
@@ -63,7 +63,7 @@
                                     }
                                 }
                                 else {
-                                    header("Location: /Companies/TexSys_Corp/Dev-workspace/Dev_login.php?error=fatal_url");
+                                    header("Location: /Companies/TexSys_Corp/Dev-workspace/Dev_Login.html?error=fatal_url");
                                     exit();
                                 }
                             ?>

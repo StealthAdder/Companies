@@ -14,7 +14,7 @@
 
         //E1 - EMPTY FIELDS
         if (empty($username) || empty($userpassword)) {
-            header("Location: /Companies/TexSys_Corp/Dev-workspace/Dev_login.php?error=emptyfields");
+            header("Location: /Companies/TexSys_Corp/Dev-workspace/Dev_Login.html?error=emptyfields");
             exit();
         }
         //v1 - AUTH
@@ -27,7 +27,7 @@
 
             //CONNECT VERIFICATION
             if (!mysqli_stmt_prepare($stmt, $sql)) {
-                header("Location: /Companies/TexSys_Corp/Dev-workspace/Dev_login.php?error=sqlerror0");
+                header("Location: /Companies/TexSys_Corp/Dev-workspace/Dev_Login.html?error=sqlerror0");
                 exit();
             }
             else {
@@ -44,7 +44,7 @@
 
                     //checking password verification
                     if ($passwdCheck == false) {
-                        header("Location: /Companies/TexSys_Corp/Dev-workspace/Dev_login.php?error=wrongpwd");
+                        header("Location: /Companies/TexSys_Corp/Dev-workspace/Dev_Login.html?error=wrongpwd");
                         exit();
                     }
                     elseif ($passwdCheck == true) {
@@ -61,7 +61,7 @@
                     }
                     //safe securing loop
                     else {
-                        header("Location: /Companies/TexSys_Corp/Dev-workspace/workspace/Dev_login.php?error=wrongpwd1");
+                        header("Location: /Companies/TexSys_Corp/Dev-workspace/workspace/Dev_Login.html?error=wrongpwd1");
                         exit();
                     }
                 }
@@ -75,6 +75,6 @@
         mysqli_close($conn);
     }
     else {
-        header("Location: /Companies/TexSys_Corp/Dev-workspace/Dev_login.php?error=accessdenied");
+        header("Location: /Companies/TexSys_Corp/Dev-workspace/Dev_Login.html?error=accessdenied");
         exit();
     }

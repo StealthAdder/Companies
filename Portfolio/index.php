@@ -22,7 +22,7 @@
                     }
                 ?>
             </span>
-            <span><a href="/Companies/index.php" class="menu1">TexSys Corp.</a></span>
+            <span><a href="/Companies/index.html" class="menu1">TexSys Corp.</a></span>
             <span>
                 <?php
                     if(isset($_SESSION['client_id'])) {
