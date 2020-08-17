@@ -6,7 +6,7 @@
 
  /*bg image*/
  header{
-   background-image: url(../images/pexels-philippe-donn-1169754.png);
+   background-image: url(../images/pexels-daniel-absi-952670.jpg);
    height: 100vh;
    background-size: cover;
    background-position: center;
@@ -23,9 +23,11 @@ h1{
  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
  text-align: center;
  margin-top: 50px;
+ color: honeydew;
 }
 .para{
   padding: 60px;
+  color: #f2f2f2;
 }
 .topnav {
     background-color: #0004;
