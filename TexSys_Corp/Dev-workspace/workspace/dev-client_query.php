@@ -57,11 +57,17 @@
                     <?php
                         if (isset($_SESSION['userId'])) {
                                     
-                            //Connection
-                                include ("/var/www/html/config_portfolio/DB-config.php");
+                            include ("/var/www/html/access/companies_access.php");
+        
+                            //connection
+                                $conn = mysqli_connect($host, $user, $passwd, $db);
+                                unset($hostname, $username, $passwd, $db);
+                                
 
-                                $conn = mysqli_connect($host, $user, $passwd, 'portfolio');
-                                unset($host, $user, $passwd);
+                                //checking con
+                                if(mysqli_connect_errno()){
+                                    echo "Error in connection Please check the connection" . mysqli_connect_errno();
+                                }
 
                                 $sql = 'SELECT * FROM Client_query ORDER BY query_id DESC';
 
@@ -112,11 +118,17 @@
                     <?php
                         if (isset($_SESSION['userId'])) {
                                     
-                            //Connection
-                                include ("/var/www/html/config_portfolio/DB-config.php");
+                            include ("/var/www/html/access/companies_access.php");
+        
+                            //connection
+                                $conn = mysqli_connect($host, $user, $passwd, $db);
+                                unset($hostname, $username, $passwd, $db);
+                                
 
-                                $conn = mysqli_connect($host, $user, $passwd, 'portfolio');
-                                unset($host, $user, $passwd);
+                                //checking con
+                                if(mysqli_connect_errno()){
+                                    echo "Error in connection Please check the connection" . mysqli_connect_errno();
+                                }
 
                                 $sql = 'SELECT * FROM Client_query WHERE query_type = "TechEnquiry"  ORDER BY query_id DESC';
 
@@ -163,11 +175,17 @@
                     <?php
                         if (isset($_SESSION['userId'])) {
                                     
-                            //Connection
-                                include ("/var/www/html/config_portfolio/DB-config.php");
+                            include ("/var/www/html/access/companies_access.php");
+        
+                            //connection
+                                $conn = mysqli_connect($host, $user, $passwd, $db);
+                                unset($hostname, $username, $passwd, $db);
+                                
 
-                                $conn = mysqli_connect($host, $user, $passwd, 'portfolio');
-                                unset($host, $user, $passwd);
+                                //checking con
+                                if(mysqli_connect_errno()){
+                                    echo "Error in connection Please check the connection" . mysqli_connect_errno();
+                                }
 
                                 $sql = 'SELECT * FROM Client_query WHERE query_type = "Sales" ORDER BY query_id DESC';
 
@@ -213,11 +231,17 @@
                     <?php
                         if (isset($_SESSION['userId'])) {
                                     
-                            //Connection
-                                include ("/var/www/html/config_portfolio/DB-config.php");
+                            include ("/var/www/html/access/companies_access.php");
+        
+                            //connection
+                                $conn = mysqli_connect($host, $user, $passwd, $db);
+                                unset($hostname, $username, $passwd, $db);
+                                
 
-                                $conn = mysqli_connect($host, $user, $passwd, 'portfolio');
-                                unset($host, $user, $passwd);
+                                //checking con
+                                if(mysqli_connect_errno()){
+                                    echo "Error in connection Please check the connection" . mysqli_connect_errno();
+                                }
 
                                 $sql = 'SELECT * FROM Client_query WHERE query_type = "Others" ORDER BY query_id DESC';
 

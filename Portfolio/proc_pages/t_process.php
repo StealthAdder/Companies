@@ -21,16 +21,18 @@
         $time_stamp = date("d-m-Y H:i:s");
 
 
-        include ("/var/www/html/config_portfolio/DB-config.php");
+        include ("/var/www/html/access/companies_access.php");
         
         // //connection
-        $conn = mysqli_connect($host, $user, $passwd, 'portfolio');
-        unset($hostname, $username, $passwd);
+        $conn = mysqli_connect($host, $user, $passwd, $db);
+        unset($hostname, $username, $passwd, $db);
+        
 
         //checking con
         if(mysqli_connect_errno()){
             echo "Error in connection Please check the connection" . mysqli_connect_errno();
         }
+        
 
         if (empty($qtype) || empty($msg)) {
             header("Location: /Companies/Portfolio/contact.php?error=emptyfields");

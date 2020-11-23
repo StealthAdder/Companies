@@ -11,11 +11,17 @@ if (isset($_POST['signup-submit'])) {
     $client_password = $_POST['pwd'];
     $client_passwordRepeat = $_POST['pwd-repeat'];
 
-    include ("/var/www/html/config_portfolio/DB-config.php");
+    include ("/var/www/html/access/companies_access.php");
+        
+        // //connection
+        $conn = mysqli_connect($host, $user, $passwd, $db);
+        unset($hostname, $username, $passwd, $db);
+        
 
-    //connection
-    $conn = mysqli_connect($host, $user, $passwd, 'portfolio');
-    unset($host, $user, $passwd);
+        //checking con
+        if(mysqli_connect_errno()){
+            echo "Error in connection Please check the connection" . mysqli_connect_errno();
+        }
 
     //check connection
 
